@@ -1,4 +1,4 @@
--- ScrobbleSync 0.2.0
+-- ScrobbleSync 0.3.0
 
 -- ENTER YOUR LAST.FM USERNAME HERE between the = and the \
 set username to "&username=Samu-1\""
@@ -20,6 +20,7 @@ set headers to "--user-agent \"ScrobbleSync\" --referer \"https://scrobblesync.c
 set baseURL to "\"http://ws.audioscrobbler.com/2.0/?method=track.getInfo"
 set APIKey to "&api_key=e72f27917817492492a244ff7e22b561"
 set replacements to {{"&", "%26"}, {"#", "%23"}, {"+", "%2B"}, {"\"", "\\\""}, {"$", "\\$"}, {" ", "+"}, {"[", "%5B"}, {"]", "%5D"}}
+set errorCodes to {{code:6, description:"Invalid parameters"}, {code:16, description:"Service temporarily unavailable, please try again."}, {code:26, description:"API Key Suspended"}, {code:29, description:"Rate limit exceeded"}}
 
 
 tell application "Music"
@@ -111,10 +112,23 @@ on getPlayCount(QueryResponse)
 		set lastXML to make new XML data with properties {text:QueryResponse}
 		try
 			set lfplaycount to get value of XML element "userplaycount" of XML element "track" of XML element "lfm" of lastXML
+			return lfplaycount
 		on error
-			set errorCode to get value of XML attribute "code" of XML element "error" of XML element "lfm" of lastXML
-            		error "API error: " & errorCode
+   			set errorCode to get value of XML attribute "code" of XML element "error" of XML element "lfm" of lastXML
+    			set errorDescription to my getErrorDescription(errorCode as integer)
+			if errorCode is "16" or errorCode is "26" or errorCode is "29" then
+				error "API error: " & errorCode & " - " & errorDescription
+			end if
       	 	end try
 	end tell
-	return lfplaycount
 end getPlayCount
+
+
+on getErrorDescription(errorCode)
+    repeat with errorRecord in errorCodes
+        if code of errorRecord is errorCode then
+            return description of errorRecord
+        end if
+    end repeat
+    return "Unknown error. Message me on Discord @Samu#1337"
+end getErrorDescription
