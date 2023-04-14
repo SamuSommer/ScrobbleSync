@@ -13,18 +13,18 @@ This README.md should give you all the relevant information for using this tool.
 ## Installation
 1. Download the script and paste it into
 
-    /Users/yourusernamehere/Library/Music/Scripts
+>/Users/yourusernamehere/Library/Music/Scripts
 
 (create the Scripts folder if it doesn't exist yet)
 
-2. Then open it and put in your username where it says to do so (at the top).
-3. Save the script (⌘-S) and close it.
+2. Then open it and put in your **last.fm username** where it says to do so (at the top).
+3. Save the script (`⌘-S`) and close it.
 
 ## Usage
 
 ### First-time setup:
 1. Open Apple Music and view your Library in tracks view. 
-2. Press ⌘-J for display options. Enable comments, and Last Played.
+2. Press `⌘-J` for display options. Enable `Comments`, and `Last Played`.
 3. Now, select a few tracks and then click the script icon on the menu bar (*it's the little scroll*), then click on ScrobbleSync.  
 4. It will start running, writing the comments starting from the first selected song.
 
@@ -39,11 +39,11 @@ then at the top, click on the last played column until it sorts by last played (
 Once it has finished running, you will get a popup telling you how many scrobble counts were synced.
 Prompts to save, yada yada
 
-**Important things to note:**
+### Important things to note:
 
 While the script is running, you can't scroll around or click on other stuff in Apple Music. 
 Playback will continue however, and the media keys still work. 
-If you want to stop the script, just press ESC. 
+If you want to **stop the script**, just press `ESC`. 
 
 ## Limitations
 
