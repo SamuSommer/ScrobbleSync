@@ -75,6 +75,13 @@ That's why I use the comment workaround.
 #### Does this collect my data in any way?  
 No, I do not get any of your data. The only info you put in is your username, which is only used to call the last.fm API. The API response is handled on device by the script, none of it is sent or stored anywhere.
 
+## Changelog
+
+#### 0.1.1
+Improvements to readability and logic structure.
+
+#### 0.1.0 
+Initial development release.
 
 ## Contributing
 
