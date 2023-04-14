@@ -25,10 +25,14 @@ This README.md should give you all the relevant information for using this tool.
 ### First-time setup:
 1. Open Apple Music and view your Library in tracks view. 
 2. Press `⌘-J` for display options. Enable `Comments`, and `Last Played`.
-3. Now, select a few tracks and then click the script icon on the menu bar (*it's the little scroll*), then click on ScrobbleSync.  
-4. It will start running, writing the comments starting from the first selected song.
+3. **WARNING**: If you have anything written in comment fields already, it WILL GET OVERWRITTEN by ScrobbleSync. If that is a concern for you, I recommend you [back up your Apple Music library](https://www.imore.com/how-back-your-itunes-library). Don't worry, the script won't change anything but comments, but having a backup is a good idea anyways.
+4. You're all set! Now you can start using ScrobbleSync! :)
+
+### Modes
 
 ### Fast mode:
+Now, select a few tracks and then click the script icon on the menu bar (*it's the little scroll*), then click on ScrobbleSync.  
+It will start running, writing the comments starting from the first selected song.
 
 ### Overnight mode:
 
@@ -77,11 +81,25 @@ No, I do not get any of your data. The only info you put in is your username, wh
 
 ## Changelog
 
+#### 0.4.0 (15-04-2023)
+- Encoding reworked to work automatically with flags
+- Removed now-deprecated handlers
+- Simplified username input
+
+#### 0.3.0 (14-04-2023)
+- Added getErrorDescription handler
+- Enabled error codes recognition and different messages
+- Adjusted getPlayCount handler accordingly
+
+#### 0.2.0 (14-04-2023)
+- Added on error condition to getPlayCount handler 
+- Included error message in the getPlayCount handler
+
 #### 0.1.1 (14-04-2023)
-- Improvements to readability and logic structure.
+- Improvements to readability and logic structure
 
 #### 0.1.0 (14-04-2023)
-- Initial development release.
+- Initial development release
 
 ## Contributing
 
