@@ -1,4 +1,4 @@
--- ScrobbleSync 0.1.1
+-- ScrobbleSync 0.2.0
 
 -- ENTER YOUR LAST.FM USERNAME HERE between the = and the \
 set username to "&username=Samu-1\""
