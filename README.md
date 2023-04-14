@@ -4,27 +4,29 @@ ScrobbleSync is a simple AppleScript (*soon-to-be Applet*) that fetches the scro
 
 ## Getting Started
 
-This readme.md should give you all the relevant information for using this tool. If something is unclear or not working, you can message me on Discord @Samu#1337
+This README.md should give you all the relevant information for using this tool. If something is unclear or not working, you can message me on Discord @Samu#1337
 
 ## Prerequisites
-- A Mac.
-- Apple Music.
+- A Mac
+- Apple Music
 
 ## Installation
-Download the script and paste it into
+1. Download the script and paste it into
 
     /Users/yourusernamehere/Library/Music/Scripts
 
 (create the Scripts folder if it doesn't exist yet)
 
-Then open it and put in your username where it says to do so (at the top), then save the script (Cmd-S) and close it.
+2. Then open it and put in your username where it says to do so (at the top).
+3. Save the script (⌘-S) and close it.
 
 ## Usage
 
 ### First-time setup:
 1. Open Apple Music and view your Library in tracks view. 
-2. Press Cmd-J for display options. Enable comments, and Last Played.
-3. Now, select a few tracks and then click the script icon on the menu bar (*it's the little scroll*), then click on ScrobbleSync. It will start running, writing the comments starting from the first selected song.
+2. Press ⌘-J for display options. Enable comments, and Last Played.
+3. Now, select a few tracks and then click the script icon on the menu bar (*it's the little scroll*), then click on ScrobbleSync.  
+4. It will start running, writing the comments starting from the first selected song.
 
 ### Fast mode:
 
