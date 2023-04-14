@@ -56,25 +56,22 @@ This API rate limit is annoying, but unfortunately can't be avoided.
 
 ## FAQ
 
-Q: Something is not working! Help!  
-
-A: You can message me on Discord @Samu#1337, I will try to help you :)
-
-
-Q: Does this work on iOS / on Windows / on Android / with Spotify / etc.?  
-
-A: Unfortunately no, AppleScript only works on Mac. Spotify doesn't have any metadata editing features. If you really care about scrobbles and correct tags, I highly recommend you switch to Apple Music.
+#### Something is not working! Help!  
+You can message me on Discord @Samu#1337, I will try to help you :)
 
 
-Q: Why do you write the scrobbles to comment instead of just updating the playcount directly?  
+#### Does this work on iOS / on Windows / on Android / with Spotify / etc.?  
+Unfortunately no, AppleScript only works on Mac.  
+Spotify doesn't have any metadata editing features. If you really care about scrobbles and correct tags, I highly recommend you switch to Apple Music.
 
-A: It is against Apple Music's Terms of Service to modify playcounts. Also, even though there are scripts that do that, playcounts are reset to their previous value on next Cloud Library sync, not making this a viable option.
+
+#### Why do you write the scrobbles to comment instead of just updating the playcount directly?  
+It is against Apple Music's Terms of Service to modify playcounts.  
+Also, even though there are scripts that do that, playcounts are reset to their previous value on next Cloud Library sync, not making this a viable option.
 That's why I use the comment workaround.
 
-
-Q: Does this collect my data in any way?  
-
-A: No, I do not get any of your data. The only info you put in is your username, which is only used to call the last.fm API. The API response is handled on device by the script, none of it is sent or stored anywhere.
+#### Does this collect my data in any way?  
+No, I do not get any of your data. The only info you put in is your username, which is only used to call the last.fm API. The API response is handled on device by the script, none of it is sent or stored anywhere.
 
 
 ## Contributing
