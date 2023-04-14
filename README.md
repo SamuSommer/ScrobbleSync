@@ -1,22 +1,19 @@
 # ScrobbleSync
 
-ScrobbleSync is a simple AppleScript (soon-to-be Applet) that fetches the scrobble count for each song in your Apple Music library and stores it in the comment field, which can then be used for sorting and filtering.
+ScrobbleSync is a simple AppleScript (*soon-to-be Applet*) that fetches the scrobble count for each song in your Apple Music library and stores it in the comment field, which can then be used for sorting and filtering.
 
 ## Getting Started
 
-This readme should give all the relevant information for using this tool. If something is unclear or not working, you can message me on Discord @Samu#1337
-
-Download the script
+This readme.md should give you all the relevant information for using this tool. If something is unclear or not working, you can message me on Discord @Samu#1337
 
 ## Prerequisites
-A Mac.
-Apple Music.
-The script.
+- A Mac.
+- Apple Music.
 
 ## Installation
-Paste the downloaded script into
+Download the script and paste it into
 
-/Users/yourusernamehere/Library/Music/Scripts
+    /Users/yourusernamehere/Library/Music/Scripts
 
 (create the Scripts folder if it doesn't exist yet)
 
@@ -26,21 +23,21 @@ Then open it and put in your username where it says to do so (at the top), then 
 
 ### First-time setup:
 1. Open Apple Music and view your Library in tracks view. 
-2. Press Cmd-J for display options. enable comments, and last played.
-3. now, select a few tracks and then click the script icon on the menu bar (it's the little scroll), then click on my script. it will start running, writing the comments starting from the first selected song.
+2. Press Cmd-J for display options. Enable comments, and Last Played.
+3. Now, select a few tracks and then click the script icon on the menu bar (*it's the little scroll*), then click on ScrobbleSync. It will start running, writing the comments starting from the first selected song.
 
 ### Fast mode:
 
 ### Overnight mode:
 
 
-the next part is my personal use rec, not mandatory:
+*the next part is my personal use rec, not mandatory:*
 then at the top, click on the last played column until it sorts by last played (most recent tracks first). this is to import the scrobbles for your recently listened songs (i usually do it once a day for the day's plays), and so you can gradually import all scrobbles going from recent to old plays.
 
 Once it has finished running, you will get a popup telling you how many scrobble counts were synced.
 Prompts to save, yada yada
 
-Important things to note:
+**Important things to note:**
 
 While the script is running, you can't scroll around or click on other stuff in Apple Music. 
 Playback will continue however, and the media keys still work. 
@@ -59,23 +56,23 @@ This API rate limit is annoying, but unfortunately can't be avoided.
 
 ## FAQ
 
-Q: Something is not working! Help!
+Q: Something is not working! Help!  
 
 A: You can message me on Discord @Samu#1337, I will try to help you :)
 
 
-Q: Does this work with Spotify / on Windows / on Android / etc.?
+Q: Does this work with Spotify / on Windows / on Android / etc.?  
 
 A: Unfortunately no, AppleScript only works on Mac. Spotify doesn't have any metadata editing features.
 
 
-Q: Why do you write the scrobbles to comment instead of just updating the playcount directly?
+Q: Why do you write the scrobbles to comment instead of just updating the playcount directly?  
 
-A: It is against Apple Music's Terms of Servic to modify playcounts. Also, even though there are scripts that do that, playcounts are reset to their previous value on next Cloud Library sync, not making this a viable option.
+A: It is against Apple Music's Terms of Service to modify playcounts. Also, even though there are scripts that do that, playcounts are reset to their previous value on next Cloud Library sync, not making this a viable option.
 That's why I use the comment workaround.
 
 
-Q: Does this collect my data in any way?
+Q: Does this collect my data in any way?  
 
 A: No, I do not get any of your data. The only info you put in is your username, which is only used to call the last.fm API. The API response is handled on device by the script, none of it is sent or stored anywhere.
 
