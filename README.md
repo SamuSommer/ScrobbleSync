@@ -77,11 +77,11 @@ No, I do not get any of your data. The only info you put in is your username, wh
 
 ## Changelog
 
-#### 0.1.1
-Improvements to readability and logic structure.
+#### 0.1.1 (14-04-2023)
+- Improvements to readability and logic structure.
 
-#### 0.1.0 
-Initial development release.
+#### 0.1.0 (14-04-2023)
+- Initial development release.
 
 ## Contributing
 
