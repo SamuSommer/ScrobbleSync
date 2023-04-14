@@ -109,7 +109,12 @@ end replaceChars
 on getPlayCount(QueryResponse)
 	tell application "System Events"
 		set lastXML to make new XML data with properties {text:QueryResponse}
-		set lfplaycount to get value of XML element "userplaycount" of XML element "track" of XML element "lfm" of lastXML
+		try
+			set lfplaycount to get value of XML element "userplaycount" of XML element "track" of XML element "lfm" of lastXML
+		on error
+			set errorCode to get value of XML attribute "code" of XML element "error" of XML element "lfm" of lastXML
+            		error "API error: " & errorCode
+      	 	end try
 	end tell
 	return lfplaycount
 end getPlayCount
