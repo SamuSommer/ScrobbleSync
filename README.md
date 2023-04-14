@@ -61,9 +61,9 @@ Q: Something is not working! Help!
 A: You can message me on Discord @Samu#1337, I will try to help you :)
 
 
-Q: Does this work with Spotify / on Windows / on Android / etc.?  
+Q: Does this work on iOS / on Windows / on Android / with Spotify / etc.?  
 
-A: Unfortunately no, AppleScript only works on Mac. Spotify doesn't have any metadata editing features.
+A: Unfortunately no, AppleScript only works on Mac. Spotify doesn't have any metadata editing features. If you really care about scrobbles and correct tags, I highly recommend you switch to Apple Music.
 
 
 Q: Why do you write the scrobbles to comment instead of just updating the playcount directly?  
