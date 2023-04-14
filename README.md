@@ -1,38 +1,37 @@
 # ScrobbleSync
 
-
-ScrobbleSync is an easy-to-use AppleScript (future Applet?) that fetches the scrobble count for each song in your Apple Music library and stores it in the comment field, which can then be used for sorting and filtering.
+ScrobbleSync is a simple AppleScript (soon-to-be Applet) that fetches the scrobble count for each song in your Apple Music library and stores it in the comment field, which can then be used for sorting and filtering.
 
 ## Getting Started
 
 This readme should give all the relevant information for using this tool. If something is unclear or not working, you can message me on Discord @Samu#1337
 
+Download the script
+
 ## Prerequisites
 A Mac.
-
 Apple Music.
-
 The script.
 
 ## Installation
-Download the Script and paste it into
+Paste the downloaded script into
 
 /Users/yourusernamehere/Library/Music/Scripts
 
-(create the Scripts folder if it doesnt exist yet)
+(create the Scripts folder if it doesn't exist yet)
 
 Then open it and put in your username where it says to do so (at the top), then save the script (Cmd-S) and close it.
 
 ## Usage
 
-First-time setup:
+### First-time setup:
 1. Open Apple Music and view your Library in tracks view. 
 2. Press Cmd-J for display options. enable comments, and last played.
 3. now, select a few tracks and then click the script icon on the menu bar (it's the little scroll), then click on my script. it will start running, writing the comments starting from the first selected song.
 
-Fast mode:
+### Fast mode:
 
-Overnight mode:
+### Overnight mode:
 
 
 the next part is my personal use rec, not mandatory:
@@ -56,7 +55,7 @@ In Fast Mode, I still recommend not doing too many songs at once (I usually do l
 In the case you do get rate limited however (like if you tried do run the script in Fast Mode on like several thousand songs at once, the script will show an error message and stop running. 
 Then you can either wait a while (not exactly sure how long) or change your IP adress, either with a VPN or by restarting your router.
 
-This API rate limit is annoying, but nothing I can do about it unfortunately.
+This API rate limit is annoying, but unfortunately can't be avoided.
 
 ## FAQ
 
@@ -68,6 +67,12 @@ A: You can message me on Discord @Samu#1337, I will try to help you :)
 Q: Does this work with Spotify / on Windows / on Android / etc.?
 
 A: Unfortunately no, AppleScript only works on Mac. Spotify doesn't have any metadata editing features.
+
+
+Q: Why do you write the scrobbles to comment instead of just updating the playcount directly?
+
+A: It is against Apple Music's Terms of Servic to modify playcounts. Also, even though there are scripts that do that, playcounts are reset to their previous value on next Cloud Library sync, not making this a viable option.
+That's why I use the comment workaround.
 
 
 Q: Does this collect my data in any way?
