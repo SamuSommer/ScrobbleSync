@@ -1,4 +1,4 @@
--- ScrobbleSync 0.1.0
+-- ScrobbleSync 0.1.1
 
 -- ENTER YOUR LAST.FM USERNAME HERE between the = and the \
 set username to "&username=Samu-1\""
@@ -15,9 +15,11 @@ else
 	set delayDuration to 5
 end if
 
+
 set headers to "--user-agent \"ScrobbleSync\" --referer \"https://scrobblesync.carrd.co\" "
 set baseURL to "\"http://ws.audioscrobbler.com/2.0/?method=track.getInfo"
 set APIKey to "&api_key=e72f27917817492492a244ff7e22b561"
+set replacements to {{"&", "%26"}, {"#", "%23"}, {"+", "%2B"}, {"\"", "\\\""}, {"$", "\\$"}, {" ", "+"}, {"[", "%5B"}, {"]", "%5D"}}
 
 
 tell application "Music"
@@ -29,10 +31,7 @@ tell application "Music"
 		repeat with t in sel
 			set artistraw to the artist of t
 			set trackraw to the name of t
-			
 			set AMplaycount to the played count of t as integer
-			
-			set replacements to {{"&", "%26"}, {"#", "%23"}, {"+", "%2B"}, {"\"", "\\\""}, {"$", "\\$"}, {" ", "+"}, {"[", "%5B"}, {"]", "%5D"}}
 			
 			set artistquery to my replaceMultiple(artistraw, replacements)
 			set trackquery to my replaceMultiple(trackraw, replacements)
@@ -46,7 +45,7 @@ tell application "Music"
 				set lfplaycount to my getPlayCount(QueryResponse)
 				set lfplaycountInt to lfplaycount as integer
 				
-				if lfplaycountInt ³ AMplaycount then
+				if lfplaycountInt â‰¥ AMplaycount then
 					set comment of t to lfplaycount
 				else
 					if lfplaycountInt = 0 and AMplaycount > 0 then
@@ -63,9 +62,11 @@ tell application "Music"
 			end try
 			
 			delay delayDuration
+			
 			set counter to counter + 1
 			
 		end repeat
+		
 		
 		set dialogSummary to display dialog "" & counter & " scrobble counts updated." buttons {"Nice!"} default button 1
 		
@@ -82,6 +83,7 @@ tell application "Music"
 		
 	end if
 end tell
+
 
 on replaceMultiple(subject, replacements)
 	repeat with i from 1 to count items of replacements
@@ -111,4 +113,3 @@ on getPlayCount(QueryResponse)
 	end tell
 	return lfplaycount
 end getPlayCount
-
