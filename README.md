@@ -81,6 +81,11 @@ No, I do not get any of your data. The only info you put in is your username, wh
 
 ## Changelog
 
+#### 0.5.0 (16-04-2023)
+- Better error handling
+- Escaping apostrophes with quoted form (fixes error)
+- Foundation for Modes rework
+
 #### 0.4.0 (15-04-2023)
 - Encoding reworked to work automatically with flags
 - Removed now-deprecated handlers
