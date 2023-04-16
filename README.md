@@ -23,7 +23,7 @@ This README.md should give you all the relevant information for using this tool.
 
 ### Installation
 1. Download ScrobbleSync (click on the green `Code` button towards the top of this page, then click `Download ZIP`)
-2. Open the zip folder and copy the file **'ScrobbleSync_0.6.0.scpt'**
+2. Open the zip folder and copy the file **'ScrobbleSync_0.6.1.scpt'** (make sure to use the **.scpt** version, not the .applescript version!)
 3. Paste it into
 
 >/Users/yourusernamehere/Library/Music/Scripts
@@ -86,11 +86,19 @@ It is against Apple Music's Terms of Service to modify playcounts.
 Also, even though there are scripts that do that, playcounts are reset to their previous value on next Cloud Library sync, not making this a viable option.
 That's why I use the comment workaround.
 
+#### Why are there two versions, .scpt and .applescript?
+Both versions contain the same code. You should use .scpt
+The .scpt is compiled and works on various macOS versions.
+The .applescript can be read and edited in GitHub, which is not possible for .scpt.
+
 #### Does this collect my data in any way?  
 No, I do not get any of your data. The only info you put in is your username, and optionally a filepath. The API response is handled on device by the script, none of it is sent or saved anywhere.
 
 
 ## Changelog
+
+#### 0.6.1 (16-04-2023)
+- Small fix to selCount condition for Manual Sync
 
 #### 0.6.0 (16-04-2023)
 - Biggest rework yet!
