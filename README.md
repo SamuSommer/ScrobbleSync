@@ -23,15 +23,15 @@ This README.md should give you all the relevant information for using this tool.
 
 ### Installation
 1. Download ScrobbleSync (click on the green `Code` button towards the top of this page, then click `Download ZIP`)
-2. Open the zip folder and copy the file 'ScrobbleSync 0.6.0.scpt'
+2. Open the zip folder and copy the file **'ScrobbleSync_0.6.0.scpt'**
 3. Paste it into
 
 >/Users/yourusernamehere/Library/Music/Scripts
 
-(create the Scripts folder if it doesn't exist yet)
+(create the *Scripts* folder if it doesn't exist yet)
 
 4. Then open the file and put in your **last.fm username** where it says to do so (at the top).
-5. (*Optional but recommended*) If you want a text file with a summary of the script's run and tags to check to be created automatically, please enter the file path where it shall be saved below. If you don't want the summary, just leave it as is, nothing will be created.
+5. (*Optional but recommended*) If you want a text file with a summary of the script's run and tags to check to be created automatically, please enter the **file path** to save it in below. If you don't want the summary, just leave it as is, nothing will be created.
 6. Save the script (`⌘-S`) and close it.
 
 
@@ -53,19 +53,17 @@ This README.md should give you all the relevant information for using this tool.
 ### Modes
 
 #### Manual Sync
-- Manual Sync is meant for a quick sync of a few songs (up to about 250).
-- It will start running, writing the comments starting from the first selected song.
-- It is faster than the other Modes, but:
-- **DON'T** use this to sync your *entire* library! You will get rate limited. (see *Limitations* below). **Use Full Sync instead.**
+- Manual Sync is meant for a quick sync of a few songs (up to about 250 - if you select more, it will raise an error).
+- To sync your entire library, use **Daily Sync** or **Manual Sync**.
 
 #### Daily Sync
-- Daily Sync currently does the same thing as Manual Sync, only slower. 
-- The longer delay allows to sync more songs without hitting rate limit.
+- Daily Sync has no songs limit, but is a bit slower than manual sync (about 600 songs per hour).
+- The longer delay allows to sync more songs without hitting *rate limit* (see **Limitations** below).
 - *It will be reworked soon to automatically select the last played songs of the last 48 hours and sync those.*
 
 #### Full Sync
-- Full Sync currently works the same as Daily Sync.
-- *After rework, it will automatically select all songs in the library and sync them.*
+- Full Sync currently works the same as Daily Sync. You can use either of them.
+- *After the upcoming rework, it will automatically select all songs in the library and sync them.*
 
 
 ## Limitations
@@ -93,6 +91,12 @@ No, I do not get any of your data. The only info you put in is your username, an
 
 
 ## Changelog
+
+#### 0.6.0 (16-04-2023)
+- Biggest rework yet!
+- Greatly improved Summary with dedicated handler
+- Reworked Manual Sync
+- Bug fixes and stability improvements
 
 #### 0.5.0 (16-04-2023)
 - Better error handling
