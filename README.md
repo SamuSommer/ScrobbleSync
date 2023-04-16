@@ -97,6 +97,7 @@ No, I do not get any of your data. The only info you put in is your username, an
 - Greatly improved Summary with dedicated handler
 - Reworked Manual Sync
 - Bug fixes and stability improvements
+- Added .scpt file for usage. .applescript remains for open source code and branch comparisons
 
 #### 0.5.0 (16-04-2023)
 - Better error handling
