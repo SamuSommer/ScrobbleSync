@@ -1,4 +1,4 @@
--- ScrobbleSync 0.6.0
+-- ScrobbleSync 0.6.1
 
 
 -- ENTER YOUR LAST.FM USERNAME HERE between the " quotes.
@@ -15,11 +15,10 @@ set summaryFilePath to "/Users/nothanks/Desktop/"
 
 -- nothing you need to modify from here on out. save the script, close it, and enjoy :)
 
-
 tell application "Music"
 	if selection is not {} then
 		set sel to selection
-		set selCount to the (count of selection) as integer
+		set selCount to the count of sel
 	else
 		error "Please select some songs first, then run the script again."
 	end if
@@ -69,10 +68,10 @@ set errorCode to 0
 set errorDescription to ""
 
 set summaryCheckTags to "Tags to check (Apple Music playcount > 0 but no scrobbles found)
-		This is probably caused by an artist redirect in the last.fm database." & linefeed & linefeed
+This is probably caused by an artist redirect in the last.fm database." & linefeed & linefeed
 
 set summaryErrorTags to "Songs to try syncing again (probably failed due to last.fm server issue)
-		If the issue persists, let me know on Discord and I will investigate." & linefeed & linefeed
+If the issue persists, let me know on Discord and I will investigate." & linefeed & linefeed
 
 tell application "Music"
 	repeat with t in sel
