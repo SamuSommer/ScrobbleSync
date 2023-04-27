@@ -97,6 +97,9 @@ No, I do not get any of your data. The only info you put in is your username, an
 
 ## Changelog
 
+#### 0.6.3 (27-04-2023)
+- Fixed incorrect encoding of >= in VS Code
+
 #### 0.6.2 (27-04-2023)
 - Added autocorrect fix to deal with redirects
 

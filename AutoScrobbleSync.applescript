@@ -1,4 +1,6 @@
--- ScrobbleSync 0.6.2
+-- AutoScrobbleSync
+-- Based on 0.6.3
+-- Built for running in the background daily with automation. No user interaction needed.
 
 
 -- ENTER YOUR LAST.FM USERNAME HERE between the " quotes.
@@ -88,7 +90,7 @@ tell application "Music"
 			set lfplaycount to my getPlayCount(QueryResponse)
 			set lfplaycountInt to lfplaycount as integer
 			
-			if lfplaycountInt ³ AMplaycount then
+			if lfplaycountInt >= AMplaycount then
 				set comment of t to lfplaycount
 			else
 				if lfplaycountInt = 0 and AMplaycount > 0 then
