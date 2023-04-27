@@ -1,4 +1,4 @@
--- ScrobbleSync 0.6.1
+-- ScrobbleSync 0.6.2
 
 
 -- ENTER YOUR LAST.FM USERNAME HERE between the " quotes.
@@ -81,14 +81,14 @@ tell application "Music"
 		set trackquery to quoted form of trackraw
 		set AMplaycount to the played count of t as integer
 		
-		set curl_command to "curl -G -d 'method=track.getInfo' -d 'api_key=9effc2d441f6ecb5dd8981066b2b3241' -d 'username=" & username & "' --data-urlencode 'artist=" & (text 2 thru -2 of artistquery) & "' --data-urlencode 'track=" & (text 2 thru -2 of trackquery) & "' 'http://ws.audioscrobbler.com/2.0/'"
+		set curl_command to "curl -G -d 'method=track.getInfo' -d 'api_key=9effc2d441f6ecb5dd8981066b2b3241' -d 'autocorrect=0' -d 'username=" & username & "' --data-urlencode 'artist=" & (text 2 thru -2 of artistquery) & "' --data-urlencode 'track=" & (text 2 thru -2 of trackquery) & "' 'http://ws.audioscrobbler.com/2.0/'"
 		
 		try
 			set QueryResponse to do shell script curl_command
 			set lfplaycount to my getPlayCount(QueryResponse)
 			set lfplaycountInt to lfplaycount as integer
 			
-			if lfplaycountInt â‰¥ AMplaycount then
+			if lfplaycountInt ³ AMplaycount then
 				set comment of t to lfplaycount
 			else
 				if lfplaycountInt = 0 and AMplaycount > 0 then
@@ -117,7 +117,6 @@ tell application "Music"
 	set dialogSummary to display dialog "ScrobbleSync finished!
 		
 " & counter & " scrobble counts updated." buttons {"Nice!"} default button 1
-	-- would be nice to mention the summary has been saved at the designated location, conditionally if it has been enabled and written. add a line at the end of the handler that sets a variable to check if it is enabled (with the nothanks thing)
 end tell
 
 
