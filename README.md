@@ -97,6 +97,9 @@ No, I do not get any of your data. The only info you put in is your username, an
 
 ## Changelog
 
+#### 0.6.2 (27-04-2023)
+- Added autocorrect fix to deal with redirects
+
 #### 0.6.1 (16-04-2023)
 - Small fix to selCount condition for Manual Sync
 
