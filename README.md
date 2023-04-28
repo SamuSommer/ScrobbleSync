@@ -46,7 +46,7 @@ You only need to configure this once.
 <img src="https://i.imgur.com/mIsyy9i.png" alt="View Options Settings" width="250">
 
 4. **WARNING**: If you have anything written in comment fields already, it WILL GET OVERWRITTEN by ScrobbleSync. If that is a concern for you, I recommend you [back up your Apple Music library](https://www.imore.com/how-back-your-itunes-library). Don't worry, the script won't change anything but comments, but having a backup is a good idea anyways.
-5. You're all set! :) You will likely want do do a *Full Sync* with **ScrobbleSync** once and then use **AutoScrobbleSync** to keep your library up to date automatically.
+5. You're all set! :) You will likely want do do a *Full Sync* with **ScrobbleSync** next and then use **AutoScrobbleSync** to keep your library up to date automatically.
 
 
 
