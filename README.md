@@ -57,7 +57,7 @@ You only need to configure this once.
 2. Go to 
 >~/Library/Music/
 
-You can do this by using Finder's *Go to Folder* command (`⇧ ⌘ G`), pasting the filepath in and pressing `Enter`.Alternatively, you can paste the filepath into Spotlight Search (`⌘ SPACE`)and click the folder in the results:
+You can do this by using Finder's *Go to Folder* command (`⇧ ⌘ G`), pasting the filepath in and pressing `Enter`. Alternatively, you can paste the filepath into Spotlight Search (`⌘ SPACE`)and click the folder in the results:
 <img src="https://i.imgur.com/miQwB1Z.png" alt="Spotlight Search Filepath" width="600">
 
 3. Likely, you need to create a new folder called **Scripts** here, unless it's already there.
@@ -164,8 +164,8 @@ That's why I use the comment workaround.
 
 #### Why are there two versions, .scpt and .applescript?
 Both versions contain the same code. You should **use .scpt**.
-The .scpt is compiled and backwards compatible to various macOS versions.
-The .applescript can be read and edited in GitHub, which is not possible for .scpt.
+The .scpt is compiled, which makes it backwards compatible to various macOS versions, and also more performant. 
+The .applescript can be read and edited in VS Code and GitHub, which is not possible for .scpt. Also, like this, you can inspect the code before you download it.
 
 #### Does this collect my data in any way?  
 No, I do not get any of your data. The only info you put in is your username, and optionally a filepath.
