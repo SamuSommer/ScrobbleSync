@@ -57,7 +57,9 @@ You only need to configure this once.
 2. Go to 
 >~/Library/Music/
 
-You can do this by using Finder's *Go to Folder* command (`⇧ ⌘ G`), pasting the filepath in and pressing `Enter`. Alternatively, you can paste the filepath into Spotlight Search (`⌘ SPACE`)and click the folder in the results:
+You can do this by using Finder's *Go to Folder* command (`⇧ ⌘ G`), pasting the filepath in and pressing `Enter`. 
+
+Alternatively, you can paste the filepath into Spotlight Search (`⌘ SPACE`)and click the folder in the results:
 <img src="https://i.imgur.com/miQwB1Z.png" alt="Spotlight Search Filepath" width="600">
 
 3. Likely, you need to create a new folder called **Scripts** here, unless it's already there.
@@ -117,7 +119,9 @@ Advanced Features
 7. Go to 
 >~/Library/Music/
 
-You can do this by using Finder's *Go to Folder* command (`⇧ ⌘ G`), pasting the filepath in and pressing `Enter`.Alternatively, you can paste the filepath into Spotlight Search (`⌘ SPACE`)and click the folder in the results:
+You can do this by using Finder's *Go to Folder* command (`⇧ ⌘ G`), pasting the filepath in and pressing `Enter`.
+
+Alternatively, you can paste the filepath into Spotlight Search (`⌘ SPACE`)and click the folder in the results:
 <img src="https://i.imgur.com/miQwB1Z.png" alt="Spotlight Search Filepath" width="600">
 
 8. Likely, you need to create a new folder called **Scripts** here, unless it's already there.
