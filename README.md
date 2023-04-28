@@ -43,6 +43,7 @@ You only need to configure this once.
 3. Enable **Comments**, and **Last Played**, and at the top, set *Sort by* to **Last Played** and **Descending**.
 
 You can also select or deselect other things as you like, it doesn't matter to the script.
+
 <img src="https://i.imgur.com/mIsyy9i.png" alt="View Options Settings" width="250">
 
 4. **WARNING**: If you have anything written in comment fields already, it WILL GET OVERWRITTEN by ScrobbleSync. If that is a concern for you, I recommend you [back up your Apple Music library](https://www.imore.com/how-back-your-itunes-library). Don't worry, the script won't change anything but comments, but having a backup is a good idea anyways.
