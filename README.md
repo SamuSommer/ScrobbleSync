@@ -37,7 +37,7 @@ You only need to configure this once.
 1. Open Apple Music and view your Library in Songs View 
 <img src="https://i.imgur.com/vuhFZ69.png" alt="Songs View" width="200">
 
-2. Select Show View Options (`⌘J`)
+2. Select Show View Options (`⌘ J`)
 <img src="https://i.imgur.com/riYUsvp.png" alt="Songs View" width="450">
 
 3. Enable **Comments**, and **Last Played**, and **Sort by Last Played - Descending** You can also select or deselect other things, it doesn't matter to the script.
@@ -57,7 +57,7 @@ You only need to configure this once.
 
 (create the *Scripts* folder if it doesn't exist yet)
 3. Then open the file and put in your **Last.fm username** where it says to do so (at the top).
-4. Save the script (`⌘S`) and close it.
+4. Save the script (`⌘ S`) and close it.
 
 
 ### Usage
@@ -90,7 +90,7 @@ Advanced Features
 ### Setup
 *Shortly, I will provide the option to permanently automate it. It still requires a little bit of testing. I will update this README.md accordingly when it is ready. For now, please proceed with the following setup:*
 
-1. In Apple Music, create a new Smart Playlist (`⌥⌘N`) ![Create Smart Playlist](https://imgur.com/a/Ns6A7jj)
+1. In Apple Music, create a new Smart Playlist (`⌥ ⌘ N`) ![Create Smart Playlist](https://imgur.com/a/Ns6A7jj)
 2. Set it up with the following rules: ![Smart Playlist Rules](https://imgur.com/a/dtxfP6r)
 3. Click `OK`, and give it a name. I called mine AutoScrobbleSync, but you can choose whatever. ![Smart Playlist Name](https://imgur.com/a/kPiYFKs)
 4. In the Menu Bar, select View, then as Songs ![View Smart Playlist as Songs](https://imgur.com/a/r3g2vya)
@@ -103,7 +103,7 @@ Advanced Features
 (create the *Scripts* folder if it doesn't exist yet)
 8. Then open the file and put in your **Last.fm username** where it says to do so (at the top).
 9. Below, put in the name of the **Smart Playlist** you just created.
-10. Save the script (`⌘S`) and close it.
+10. Save the script (`⌘ S`) and close it.
 
 
 ### Usage
