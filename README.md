@@ -34,10 +34,10 @@ The setup and usage for the two versions is different, and will be outlined belo
 ### General Setup (for both versions)
 You only need to configure this once. Click on the links in the text to see screenshots if needed.
 
-1. Open Apple Music and view your Library in Songs View
-<div style="max-width: 10%">
-  <img src="https://i.imgur.com/rVkVAey.png" alt="Songs View">
-</div>
+1. Open Apple Music and view your Library in Songs View 
+<img src="https://i.imgur.com/rVkVAey.png" alt="Songs View" width="400">
+
+<blockquote class="imgur-embed-pub" lang="en" data-id="rVkVAey"><a href="https://imgur.com/rVkVAey">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 2. Select Show View Options (`⌘J`) ![Show View Options](https://imgur.com/riYUsvp)
 3. Enable **Comments**, and **Last Played**, and **Sort by Last Played - Descending** ![Check Options](https://imgur.com/a/lFEcZH3). You can also select or deselect other things, it doesn't matter to the script.
