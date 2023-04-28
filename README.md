@@ -34,7 +34,7 @@ The setup and usage for the two versions is different, and will be outlined belo
 ### General Setup (for both versions)
 You only need to configure this once. Click on the links in the text to see screenshots if needed.
 
-1. Open Apple Music and view your Library in Songs View ![Songs View](https://imgur.com/rVkVAey) 
+1. Open Apple Music and view your Library in Songs View ![Songs View](https://i.imgur.com/rVkVAey.png) 
 2. Select Show View Options (`⌘J`) ![Show View Options](https://imgur.com/riYUsvp)
 3. Enable **Comments**, and **Last Played**, and **Sort by Last Played - Descending** ![Check Options](https://imgur.com/a/lFEcZH3). You can also select or deselect other things, it doesn't matter to the script.
 4. **WARNING**: If you have anything written in comment fields already, it WILL GET OVERWRITTEN by ScrobbleSync. If that is a concern for you, I recommend you [back up your Apple Music library](https://www.imore.com/how-back-your-itunes-library). Don't worry, the script won't change anything but comments, but having a backup is a good idea anyways.
