@@ -35,7 +35,7 @@ The setup and usage for the two versions is different, and will be outlined belo
 You only need to configure this once. Click on the links in the text to see screenshots if needed.
 
 1. Open Apple Music and view your Library in Songs View
-<div style="max-width: 25%">
+<div style="max-width: 10%">
   <img src="https://i.imgur.com/rVkVAey.png" alt="Songs View">
 </div>
 
