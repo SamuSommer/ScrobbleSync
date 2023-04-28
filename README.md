@@ -101,18 +101,18 @@ Advanced Features
 *Shortly, I will provide the option to permanently automate it. It still requires a little bit of testing. I will update this README.md accordingly when it is ready. For now, please proceed with the following setup:*
 
 1. In Apple Music, create a new Smart Playlist (`⌥ ⌘ N`)
-<img src="https://i.imgur.com/cVuMmYp.png" alt="Create Smart Playlist" width="600">
+<img src="https://i.imgur.com/cVuMmYp.png" alt="Create Smart Playlist" width="550">
 
 2. Set it up like this:
 <img src="https://i.imgur.com/bFdwyoE.png" alt="Smart Playlist Rules" width="650">
 
 3. Click `OK`, and give it a name. I called mine AutoScrobbleSync, but you can choose whatever. 
-<img src="https://i.imgur.com/NbdmCsU.png" alt="Smart Playlist Name" width="450">
+<img src="https://i.imgur.com/NbdmCsU.png" alt="Smart Playlist Name" width="350">
 
-4. In the Menu Bar, select View, then as Songs
+4. While still viewing the playlist, in the Menu Bar, select View, then as Songs
 <img src="https://i.imgur.com/pnhDNRr.png" alt="View Smart Playlist as Songs" width="650">
 
-5. In the Smart Playlist, click the Last Played  Column till it sorts descending (little down arrow). Now, you can easily watch your last played songs get synced! 
+5. Click the Last Played Column until it sorts descending (little down arrow **˯** next to it). Now, you can easily watch your last played songs get synced! 
 <img src="https://i.imgur.com/sJKu6nO.png" alt="Sort by Last Played Descending" width="650">
 
 6. Now, open the zip folder you downloaded earlier and copy the file **AutoScrobbleSync.scpt** (make sure to use the **.scpt** version, not the .applescript version!)
@@ -133,14 +133,14 @@ Alternatively, you can paste the filepath into Spotlight Search (`⌘ SPACE`)and
 
 ### Usage
 Whenever you want to sync your recently played songs, do the following.
-*(soon, it won't be necessary to do it manually, but for now it still is)*
+*(soon, it won't be necessary to do it manually, but for now it still is...)*
 
 1. Go to the Menu Bar at the top and click the Scripts icon, then click AutoScrobbleSync.
 <img src="https://i.imgur.com/IwTUCPb.png" alt="Click AutoScrobbleSync Script" width="600">
 
 2. You don't need to click anything else. The Script will start running. Depending on the number of songs in the Smart Playlist, it might take a while (it processes about 600 songs per hour)
 3. If you want to **stop the script**, just press `ESC`. 
-4. Once it has finished running, you **WON'T** get a popup. You can tell it has finished when you can scroll around in Apple Music again.
+4. Once it has finished running, you **WON'T** get a popup. You can tell it has finished when you can scroll around in Apple Music again. *I am working on System Notification support for the next updates.*
 
 
 
@@ -168,7 +168,9 @@ That's why I use the comment workaround.
 
 #### Why are there two versions, .scpt and .applescript?
 Both versions contain the same code. You should **use .scpt**.
+
 The .scpt is compiled, which makes it backwards compatible to various macOS versions, and also more performant. 
+
 The .applescript can be read and edited in VS Code and GitHub, which is not possible for .scpt. Also, like this, you can inspect the code before you download it.
 
 #### Does this collect my data in any way?  
