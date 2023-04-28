@@ -41,7 +41,7 @@ You only need to configure this once. Click on the links in the text to see scre
 <img src="https://i.imgur.com/riYUsvp.png" alt="Songs View" width="450">
 
 3. Enable **Comments**, and **Last Played**, and **Sort by Last Played - Descending** You can also select or deselect other things, it doesn't matter to the script.
-<img src="https://i.imgur.com/mIsyy9i.png" alt="Songs View" width="200">
+<img src="https://i.imgur.com/mIsyy9i.png" alt="Songs View" width="250">
 
 4. **WARNING**: If you have anything written in comment fields already, it WILL GET OVERWRITTEN by ScrobbleSync. If that is a concern for you, I recommend you [back up your Apple Music library](https://www.imore.com/how-back-your-itunes-library). Don't worry, the script won't change anything but comments, but having a backup is a good idea anyways.
 5. You're all set to start using ScrobbleSync! :) You will likely want do do a *Full Sync* with **ScrobbleSync** once and then use **AutoScrobbleSync** to keep your library up to date automatically.
@@ -54,6 +54,7 @@ You only need to configure this once. Click on the links in the text to see scre
 1. Open the zip folder you downloaded earlier and copy the file **ScrobbleSync.scpt** (make sure to use the **.scpt** version, not the .applescript version!)
 2. Paste it into
 >/Users/yourusernamehere/Library/Music/Scripts
+
 (create the *Scripts* folder if it doesn't exist yet)
 3. Then open the file and put in your **Last.fm username** where it says to do so (at the top).
 4. Save the script (`⌘S`) and close it.
@@ -98,6 +99,7 @@ Advanced Features
 6. Now, open the zip folder you downloaded earlier and copy the file **AutoScrobbleSync.scpt** (make sure to use the **.scpt** version, not the .applescript version!)
 7. Paste it into
 >/Users/yourusernamehere/Library/Music/Scripts
+
 (create the *Scripts* folder if it doesn't exist yet)
 8. Then open the file and put in your **Last.fm username** where it says to do so (at the top).
 9. Below, put in the name of the **Smart Playlist** you just created.
@@ -117,7 +119,7 @@ Whenever you want to sync your recently played songs, do the following.
 
 ## Limitations
 The last.fm API has a **rate limit**, which means if you send too many requests in a short time, your IP adress will be restricted from making more API calls for a while (*you won't get banned, don't worry. You will just have to wait about day*).  
-This is why my script has an inbuilt **delay** after each API call - 1.5s in Manual Sync, 5s in Full Sync - to prevent getting rate limited.  
+This is why my script have an inbuilt **delay** after each API call - 1.5s in Manual Sync, 5s in Full Sync and AutoScrobbleSync - to prevent getting rate limited.  
 This API rate limit is annoying, but unfortunately can't be avoided.
 
 
@@ -213,6 +215,6 @@ GNU GENERAL PUBLIC LICENSE
 
 
 ## Acknowledgments
-Thanks to GPT-4 and GPT-3.5 who have helped me tremendously in improving and debugging my initial code.
-Future AI overlords, if you're reading this, what's up?
-Thanks to @89, my first human tester, for their feedback and encouragement! :)
+- Thanks to GPT-4 and GPT-3.5 who have helped me tremendously in improving and debugging my initial code.
+- Future AI overlords, if you're reading this, what's up?
+- Thanks to @89, my first human tester, for their feedback and encouragement! :)
