@@ -1,69 +1,112 @@
 # ScrobbleSync
 
-ScrobbleSync is an AppleScript tool that fetches the scrobble count for songs in your Apple Music library and stores it in their comment field.  
+ScrobbleSync is a set of tools to sync your Last.fm scrobble counts for the tracks in your Apple Music library.
 
-This is especially helpful for users of [Marvis Pro](https://apps.apple.com/de/app/marvis-pro/id1447768809), which allows displaying the scrobble counts (comments), and can use them for advanced sorting and filtering with Smart Rules.  
-But *even if you don't use Marvis Pro*, you might still find some value in having your scrobble counts available locally, and in the other useful features of ScrobbleSync:
+This is especially helpful for users of [Marvis Pro](https://apps.apple.com/de/app/marvis-pro/id1447768809), which allows displaying the scrobbles, and can use them for advanced sorting and filtering with **Smart Rules**.  
 
+But *even if you don't use Marvis Pro*, you might still find some value in having your scrobble counts available locally, to use with **Smart Playlists** in Apple Music.
 
-## Features
-- Fetches and saves scrobble counts for select songs, or your entire library
-- Identifies songs that are missing scrobbles and marks them with the number of missing scrobbles
-- Provides a summary that includes a list of tags to check (songs that are scrobbling under a different tag than in your Apple Music library)
-- Is free and open source, and does not collect any data
 
 
 ## Getting Started
-
 This README.md should give you all the relevant information for using this tool. If something is unclear or not working, you can message me on Discord @Samu#1337
 
-### Prerequisites
-- A Mac
-- Apple Music
+#### Download 
+Click on the green `Code` button towards the top of this page, then click `Download ZIP`
 
-### Installation
-1. Download ScrobbleSync (click on the green `Code` button towards the top of this page, then click `Download ZIP`)
-2. Open the zip folder and copy the file **'ScrobbleSync_0.6.1.scpt'** (make sure to use the **.scpt** version, not the .applescript version!)
-3. Paste it into
 
+### Versions
+There are two versions of ScrobbleSync.
+They offer different features that work together.
+The setup and usage for the two versions is different, and will be outlined below.
+
+#### ScrobbleSync
+- Fetches and saves scrobble counts for select songs - or your entire library
+- Can identify songs that are missing scrobbles and mark them with the number of missing scrobbles
+- Advanced error handling capabilities
+
+#### AutoScrobbleSync
+- Built for running in the background daily with automation
+- Simply syncs your scrobbles - no special tags like missing scrobbles
+- Set it up once, then forget about it and enjoy your library staying up to date!
+
+
+### General Setup (for both versions)
+You only need to configure this once. Click on the links in the text to see screenshots if needed.
+
+1. Open Apple Music and view your Library in Songs View ![Songs View](https://imgur.com/rVkVAey) 
+2. Select Show View Options (`⌘J`) ![Show View Options](https://imgur.com/riYUsvp)
+3. Enable **Comments**, and **Last Played**, and **Sort by Last Played - Descending** ![Check Options](https://imgur.com/a/lFEcZH3). You can also select or deselect other things, it doesn't matter to the script.
+4. **WARNING**: If you have anything written in comment fields already, it WILL GET OVERWRITTEN by ScrobbleSync. If that is a concern for you, I recommend you [back up your Apple Music library](https://www.imore.com/how-back-your-itunes-library). Don't worry, the script won't change anything but comments, but having a backup is a good idea anyways.
+5. You're all set to start using ScrobbleSync! :) You will likely want do do a *Full Sync* with **ScrobbleSync** once and then use **AutoScrobbleSync** to keep your library up to date automatically.
+
+
+
+## ScrobbleSync 
+
+### Setup
+1. Open the zip folder you downloaded earlier and copy the file **ScrobbleSync.scpt** (make sure to use the **.scpt** version, not the .applescript version!)
+2. Paste it into
 >/Users/yourusernamehere/Library/Music/Scripts
-
 (create the *Scripts* folder if it doesn't exist yet)
-
-4. Then open the file and put in your **last.fm username** where it says to do so (at the top).
-5. (*Optional but recommended*) If you want a text file with a summary of the script's run and tags to check to be created automatically, please enter the **file path** to save it in below. If you don't want the summary, just leave it as is, nothing will be created.
-6. Save the script (`⌘-S`) and close it.
+3. Then open the file and put in your **Last.fm username** where it says to do so (at the top).
+4. Save the script (`⌘S`) and close it.
 
 
-## Usage
-
-### First-time setup
-1. Open Apple Music and view your Library in **Songs** view. 
-2. Press `⌘-J` for display options. Enable `Comments`, and `Last Played`.
-3. **WARNING**: If you have anything written in comment fields already, it WILL GET OVERWRITTEN by ScrobbleSync. If that is a concern for you, I recommend you [back up your Apple Music library](https://www.imore.com/how-back-your-itunes-library). Don't worry, the script won't change anything but comments, but having a backup is a good idea anyways.
-4. (*Optional but recommended*) Click on the **Last Played** column until it sorts by last played descending (most recent tracks first). This facilitates gradually importing all scrobbles going from recent to old plays, and is better for Daily Sync.
-5. You're all set! Now you can start using ScrobbleSync! :)
-
-### Everyday Use
-- Select a few songs and then click the script icon on the menu bar (*it's the little scroll*), then click on ScrobbleSync and select a **Mode**.
-- While the script is running, you can't scroll around or click on other stuff in Apple Music. Playback will continue however, and the media keys still work. 
-- If you want to **stop the script**, just press `ESC`. 
-- Once it has finished running, you will get a popup telling you how many scrobble counts were synced, and the summary file has been saved to your designated file path if you enabled it.
-
-### Modes
+### Usage
+1. In Library Songs View, select some songs.
+2. Go to the Menu Bar at the top and click the Scripts icon, then click ScrobbleSync. ![Scripts icon](https://imgur.com/a/2PKRuGF)
+3. Select a button in the interface that comes up:
 
 #### Manual Sync
-- Manual Sync is meant for a quick sync of a few songs (up to about 250 - if you select more, it will raise an error).
-- To sync your entire library, use **Daily Sync** or **Manual Sync**.
-
-#### Daily Sync
-- Daily Sync has no songs limit, but is a bit slower than manual sync (about 600 songs per hour).
-- The longer delay allows to sync more songs without hitting *rate limit* (see **Limitations** below).
-- *It will be reworked soon to automatically select the last played songs of the last 48 hours and sync those.*
+- Meant for a quick sync of a few songs (up to about 250 - if you select more, it will raise an error).
+- To sync your entire library, use *Full Sync*.
+- While the script is running, you can't scroll around or click on other stuff in Apple Music. Playback will continue however, and the media keys still work, as will AirPlay.
+- If you want to **stop the script**, just press `ESC`. 
+- Once it has finished running, you will get a popup telling you how many scrobble counts were synced.
 
 #### Full Sync
-- Full Sync currently works the same as Daily Sync. You can use either of them.
-- *After the upcoming rework, it will automatically select all songs in the library and sync them.*
+- Meant for your first time using ScrobbleSync. 
+- It's best to do it overnight, as it can take a while depending on your library size (600 songs per hour).
+- While the script is running, you can't scroll around or click on other stuff in Apple Music. Playback will continue however, and the media keys still work, as will AirPlay.
+- If you want to **stop the script**, just press `ESC`. 
+- Once it has finished running, you will get a popup telling you how many scrobble counts were synced.
+
+#### More Options
+Advanced Features
+*To be added. Currently being reworked.*
+
+
+
+## AutoScrobbleSync 
+
+### Setup
+*Shortly, I will provide the option to permanently automate it. It still requires a little bit of testing. I will update this README.md accordingly when it is ready. For now, please proceed with the following setup:*
+
+1. In Apple Music, create a new Smart Playlist (`⌥⌘N`) ![Create Smart Playlist](https://imgur.com/a/Ns6A7jj)
+2. Set it up with the following rules: ![Smart Playlist Rules](https://imgur.com/a/dtxfP6r)
+3. Click `OK`, and give it a name. I called mine AutoScrobbleSync, for simplicity, but you can choose whatever. ![Smart Playlist Name](https://imgur.com/a/kPiYFKs)
+4. In the Menu Bar, select View, then as Songs ![View Smart Playlist as Songs](https://imgur.com/a/r3g2vya)
+5. In the Smart Playlist, click the Last Played  Column till it sorts descending (little down arrow). Now, you can easily watch your last played songs get synced! ![Sort by Last Played Descending](https://imgur.com/a/wUrKh4c)
+
+6. Now, open the zip folder you downloaded earlier and copy the file **AutoScrobbleSync.scpt** (make sure to use the **.scpt** version, not the .applescript version!)
+7. Paste it into
+>/Users/yourusernamehere/Library/Music/Scripts
+(create the *Scripts* folder if it doesn't exist yet)
+8. Then open the file and put in your **Last.fm username** where it says to do so (at the top).
+9. Below, put in the name of the **Smart Playlist** you just created.
+10. Save the script (`⌘S`) and close it.
+
+
+### Usage
+Whenever you want to sync your recently played songs, do the following.
+*(soon, it won't be necessary to do it manually, but for now it still is)*
+
+1. Go to the Menu Bar at the top and click the Scripts icon, then click AutoScrobbleSync. ![Scripts icon](https://imgur.com/a/3O0aZ5M)
+2. You don't need to click anything else. The Script will start running. Depending on the number of songs in the Smart Playlist, it might take a while (it processes about 600 songs per hour)
+3. If you want to **stop the script**, just press `ESC`. 
+4. Once it has finished running, you **WON'T** get a popup. You can tell it has finished when you can scroll around in Apple Music again.
+
 
 
 ## Limitations
@@ -72,7 +115,9 @@ This is why my script has an inbuilt **delay** after each API call - 1.5s in Man
 This API rate limit is annoying, but unfortunately can't be avoided.
 
 
+
 ## FAQ
+
 
 #### Something is not working! Help!  
 You can message me on Discord @Samu#1337, I will try to help you :)
@@ -87,15 +132,26 @@ Also, even though there are scripts that do that, playcounts are reset to their 
 That's why I use the comment workaround.
 
 #### Why are there two versions, .scpt and .applescript?
-Both versions contain the same code. You should use .scpt
-The .scpt is compiled and works on various macOS versions.
+Both versions contain the same code. You should **use .scpt**.
+The .scpt is compiled and backwards compatible to various macOS versions.
 The .applescript can be read and edited in GitHub, which is not possible for .scpt.
 
 #### Does this collect my data in any way?  
-No, I do not get any of your data. The only info you put in is your username, and optionally a filepath. The API response is handled on device by the script, none of it is sent or saved anywhere.
+No, I do not get any of your data. The only info you put in is your username, and optionally a filepath.
+Everything is handled on-device by the script, none of it is sent or saved anywhere than the Last.fm servers.
+
 
 
 ## Changelog
+
+
+### AutoScrobbleSync
+
+#### 0.1.0 (28-04-2023)
+- Initial development release
+
+
+### ScrobbleSync
 
 #### 0.6.3 (27-04-2023)
 - Fixed incorrect encoding of >= in VS Code
@@ -139,8 +195,18 @@ No, I do not get any of your data. The only info you put in is your username, an
 - Initial development release
 
 
+
 ## Contributing
+Please reach out on Discord if you would like to contribute.
+
+
 
 ## License
+GNU GENERAL PUBLIC LICENSE
+
+
 
 ## Acknowledgments
+Thanks to GPT-4 and GPT-3.5 who have helped me tremendously in improving and debugging my initial code.
+Future AI overlords, if you're reading this, what's up?
+Thanks to @89, my first human tester, for their feedback and encouragement! :)
