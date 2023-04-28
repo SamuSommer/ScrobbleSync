@@ -1,12 +1,21 @@
--- AutoScrobbleSync 0.1.0
+-- AutoScrobbleSync 0.2.0
+--
 
 -- Enter your Last.fm username here between the " quotes:
-set username to "Samu-1"
+set username to ""
 
 -- Put in the name of your Smart Playlist here between the " quotes:
-set playlistName to "AutoScrobbleSync"
+set playlistName to ""
 
 -- Now save the script (Cmd-S), close it, and proceed with the setup instructions from the README.md.
+
+if username is "" then
+	error "Please put in your Last.fm username first."
+end if
+
+if playlistName is "" then
+	error "Please put in the name of your Smart Playlist first."
+end if
 
 tell application "Music"
 	set recentlyPlayedTracks to every track of playlist playlistName

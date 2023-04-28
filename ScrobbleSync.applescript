@@ -1,9 +1,9 @@
--- ScrobbleSync 0.6.3
-
+-- ScrobbleSync 0.6.4
+--
 
 -- ENTER YOUR LAST.FM USERNAME HERE between the " quotes.
 
-set username to "Samu-1"
+set username to ""
 
 
 -- Optional but recommended:
@@ -14,6 +14,10 @@ set summaryFilePath to "/Users/nothanks/Desktop/"
 
 
 -- nothing you need to modify from here on out. save the script, close it, and enjoy :)
+
+if username is "" then
+	error "Please put in your Last.fm username first."
+end if
 
 tell application "Music"
 	if selection is not {} then

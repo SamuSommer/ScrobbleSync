@@ -38,10 +38,12 @@ You only need to configure this once.
 <img src="https://i.imgur.com/vuhFZ69.png" alt="Songs View" width="200">
 
 2. Select Show View Options (`⌘ J`)
-<img src="https://i.imgur.com/riYUsvp.png" alt="Songs View" width="450">
+<img src="https://i.imgur.com/riYUsvp.png" alt="Show View Options" width="450">
 
-3. Enable **Comments**, and **Last Played**, and **Sort by Last Played - Descending** You can also select or deselect other things, it doesn't matter to the script.
-<img src="https://i.imgur.com/mIsyy9i.png" alt="Songs View" width="250">
+3. Enable **Comments**, and **Last Played**, and at the top, set *Sort by* to **Last Played** and **Descending**.
+
+You can also select or deselect other things as you like, it doesn't matter to the script.
+<img src="https://i.imgur.com/mIsyy9i.png" alt="View Options Settings" width="250">
 
 4. **WARNING**: If you have anything written in comment fields already, it WILL GET OVERWRITTEN by ScrobbleSync. If that is a concern for you, I recommend you [back up your Apple Music library](https://www.imore.com/how-back-your-itunes-library). Don't worry, the script won't change anything but comments, but having a backup is a good idea anyways.
 5. You're all set! :) You will likely want do do a *Full Sync* with **ScrobbleSync** once and then use **AutoScrobbleSync** to keep your library up to date automatically.
@@ -52,17 +54,23 @@ You only need to configure this once.
 
 ### Setup
 1. Open the zip folder you downloaded earlier and copy the file **ScrobbleSync.scpt** (make sure to use the **.scpt** version, not the .applescript version!)
-2. Paste it into
->/Users/yourusernamehere/Library/Music/Scripts
+2. Go to 
+>~/Library/Music/
 
-(create the *Scripts* folder if it doesn't exist yet)
-3. Then open the file and put in your **Last.fm username** where it says to do so (at the top).
-4. Save the script (`⌘ S`) and close it.
+You can do this by using Finder's *Go to Folder* command (`⇧ ⌘ G`), pasting the filepath in and pressing `Enter`.Alternatively, you can paste the filepath into Spotlight Search (`⌘ SPACE`)and click the folder in the results:
+<img src="https://i.imgur.com/miQwB1Z.png" alt="Spotlight Search Filepath" width="600">
+
+3. Likely, you need to create a new folder called **Scripts** here, unless it's already there.
+4. Paste the **ScrobbleSync.scpt** into the Scripts folder.
+5. Then open the file and put in your **Last.fm username** where it says to do so (at the top).
+6. Save the script (`⌘ S`) and close it.
 
 
 ### Usage
 1. In Library Songs View, select some songs.
-2. Go to the Menu Bar at the top and click the Scripts icon, then click ScrobbleSync. ![Scripts icon](https://imgur.com/a/2PKRuGF)
+2. Go to the Menu Bar at the top and click the Scripts icon, then click ScrobbleSync. 
+<img src="https://i.imgur.com/KdTsk8J.png" alt="Click ScrobbleSync Script" width="600">
+
 3. Select a button in the interface that comes up:
 
 #### Manual Sync
@@ -90,27 +98,42 @@ Advanced Features
 ### Setup
 *Shortly, I will provide the option to permanently automate it. It still requires a little bit of testing. I will update this README.md accordingly when it is ready. For now, please proceed with the following setup:*
 
-1. In Apple Music, create a new Smart Playlist (`⌥ ⌘ N`) ![Create Smart Playlist](https://imgur.com/a/Ns6A7jj)
-2. Set it up with the following rules: ![Smart Playlist Rules](https://imgur.com/a/dtxfP6r)
-3. Click `OK`, and give it a name. I called mine AutoScrobbleSync, but you can choose whatever. ![Smart Playlist Name](https://imgur.com/a/kPiYFKs)
-4. In the Menu Bar, select View, then as Songs ![View Smart Playlist as Songs](https://imgur.com/a/r3g2vya)
-5. In the Smart Playlist, click the Last Played  Column till it sorts descending (little down arrow). Now, you can easily watch your last played songs get synced! ![Sort by Last Played Descending](https://imgur.com/a/wUrKh4c)
+1. In Apple Music, create a new Smart Playlist (`⌥ ⌘ N`)
+<img src="https://i.imgur.com/cVuMmYp.png" alt="Create Smart Playlist" width="600">
+
+2. Set it up with the following rules:
+<img src="https://i.imgur.com/bFdwyoE.png" alt="Smart Playlist Rules" width="650">
+
+3. Click `OK`, and give it a name. I called mine AutoScrobbleSync, but you can choose whatever. 
+<img src="https://i.imgur.com/NbdmCsU.png" alt="Smart Playlist Name" width="450">
+
+4. In the Menu Bar, select View, then as Songs
+<img src="https://i.imgur.com/pnhDNRr.png" alt="View Smart Playlist as Songs" width="650">
+
+5. In the Smart Playlist, click the Last Played  Column till it sorts descending (little down arrow). Now, you can easily watch your last played songs get synced! 
+<img src="https://i.imgur.com/sJKu6nO.png" alt="Sort by Last Played Descending" width="650">
 
 6. Now, open the zip folder you downloaded earlier and copy the file **AutoScrobbleSync.scpt** (make sure to use the **.scpt** version, not the .applescript version!)
-7. Paste it into
->/Users/yourusernamehere/Library/Music/Scripts
+7. Go to 
+>~/Library/Music/
 
-(create the *Scripts* folder if it doesn't exist yet)
-8. Then open the file and put in your **Last.fm username** where it says to do so (at the top).
-9. Below, put in the name of the **Smart Playlist** you just created.
-10. Save the script (`⌘ S`) and close it.
+You can do this by using Finder's *Go to Folder* command (`⇧ ⌘ G`), pasting the filepath in and pressing `Enter`.Alternatively, you can paste the filepath into Spotlight Search (`⌘ SPACE`)and click the folder in the results:
+<img src="https://i.imgur.com/miQwB1Z.png" alt="Spotlight Search Filepath" width="600">
+
+8. Likely, you need to create a new folder called **Scripts** here, unless it's already there.
+9. Paste the **AutoScrobbleSync.scpt** into the Scripts folder.
+10. Then open the file and put in your **Last.fm username** where it says to do so (at the top).
+11. Below, put in the name of the **Smart Playlist** you just created.
+12. Save the script (`⌘ S`) and close it.
 
 
 ### Usage
 Whenever you want to sync your recently played songs, do the following.
 *(soon, it won't be necessary to do it manually, but for now it still is)*
 
-1. Go to the Menu Bar at the top and click the Scripts icon, then click AutoScrobbleSync. ![Scripts icon](https://imgur.com/a/3O0aZ5M)
+1. Go to the Menu Bar at the top and click the Scripts icon, then click AutoScrobbleSync.
+<img src="https://i.imgur.com/IwTUCPb.png" alt="Click AutoScrobbleSync Script" width="600">
+
 2. You don't need to click anything else. The Script will start running. Depending on the number of songs in the Smart Playlist, it might take a while (it processes about 600 songs per hour)
 3. If you want to **stop the script**, just press `ESC`. 
 4. Once it has finished running, you **WON'T** get a popup. You can tell it has finished when you can scroll around in Apple Music again.
@@ -155,11 +178,17 @@ Everything is handled on-device by the script, none of it is sent or saved anywh
 
 ### AutoScrobbleSync
 
+#### 0.2.0 (29-04-2023)
+- Added conditions to check for username and playlist name
+
 #### 0.1.0 (28-04-2023)
 - Initial development release
 
 
 ### ScrobbleSync
+
+#### 0.6.4 (29-04-2023)
+- Added check for username condition
 
 #### 0.6.3 (27-04-2023)
 - Fixed incorrect encoding of >= in VS Code
