@@ -32,7 +32,7 @@ The setup and usage for the two versions is different, and will be outlined belo
 
 
 ### General Setup (for both versions)
-You only need to configure this once. Click on the links in the text to see screenshots if needed.
+You only need to configure this once.
 
 1. Open Apple Music and view your Library in Songs View 
 <img src="https://i.imgur.com/vuhFZ69.png" alt="Songs View" width="200">
@@ -44,7 +44,7 @@ You only need to configure this once. Click on the links in the text to see scre
 <img src="https://i.imgur.com/mIsyy9i.png" alt="Songs View" width="250">
 
 4. **WARNING**: If you have anything written in comment fields already, it WILL GET OVERWRITTEN by ScrobbleSync. If that is a concern for you, I recommend you [back up your Apple Music library](https://www.imore.com/how-back-your-itunes-library). Don't worry, the script won't change anything but comments, but having a backup is a good idea anyways.
-5. You're all set to start using ScrobbleSync! :) You will likely want do do a *Full Sync* with **ScrobbleSync** once and then use **AutoScrobbleSync** to keep your library up to date automatically.
+5. You're all set! :) You will likely want do do a *Full Sync* with **ScrobbleSync** once and then use **AutoScrobbleSync** to keep your library up to date automatically.
 
 
 
@@ -92,7 +92,7 @@ Advanced Features
 
 1. In Apple Music, create a new Smart Playlist (`⌥⌘N`) ![Create Smart Playlist](https://imgur.com/a/Ns6A7jj)
 2. Set it up with the following rules: ![Smart Playlist Rules](https://imgur.com/a/dtxfP6r)
-3. Click `OK`, and give it a name. I called mine AutoScrobbleSync, for simplicity, but you can choose whatever. ![Smart Playlist Name](https://imgur.com/a/kPiYFKs)
+3. Click `OK`, and give it a name. I called mine AutoScrobbleSync, but you can choose whatever. ![Smart Playlist Name](https://imgur.com/a/kPiYFKs)
 4. In the Menu Bar, select View, then as Songs ![View Smart Playlist as Songs](https://imgur.com/a/r3g2vya)
 5. In the Smart Playlist, click the Last Played  Column till it sorts descending (little down arrow). Now, you can easily watch your last played songs get synced! ![Sort by Last Played Descending](https://imgur.com/a/wUrKh4c)
 
@@ -119,8 +119,8 @@ Whenever you want to sync your recently played songs, do the following.
 
 ## Limitations
 The last.fm API has a **rate limit**, which means if you send too many requests in a short time, your IP adress will be restricted from making more API calls for a while (*you won't get banned, don't worry. You will just have to wait about day*).  
-This is why my script have an inbuilt **delay** after each API call - 1.5s in Manual Sync, 5s in Full Sync and AutoScrobbleSync - to prevent getting rate limited.  
-This API rate limit is annoying, but unfortunately can't be avoided.
+This is why my scripts have an inbuilt **delay** after each API call - 1.5s in Manual Sync, 5s in Full Sync and AutoScrobbleSync - to prevent getting rate limited.  
+You do not need to worry about this. I just explained it here for transparency and in case anyone was wondering why the script seemed 'slow'.
 
 
 
@@ -205,7 +205,7 @@ Everything is handled on-device by the script, none of it is sent or saved anywh
 
 
 ## Contributing
-Please reach out on Discord if you would like to contribute.
+Please reach out to me on Discord @Samu#1337 if you would like to contribute :)
 
 
 
