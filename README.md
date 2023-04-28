@@ -103,7 +103,7 @@ Advanced Features
 1. In Apple Music, create a new Smart Playlist (`⌥ ⌘ N`)
 <img src="https://i.imgur.com/cVuMmYp.png" alt="Create Smart Playlist" width="600">
 
-2. Set it up with the following rules:
+2. Set it up like this:
 <img src="https://i.imgur.com/bFdwyoE.png" alt="Smart Playlist Rules" width="650">
 
 3. Click `OK`, and give it a name. I called mine AutoScrobbleSync, but you can choose whatever. 
