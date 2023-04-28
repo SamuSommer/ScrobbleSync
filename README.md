@@ -112,7 +112,7 @@ Advanced Features
 4. While still viewing the playlist, in the Menu Bar, select View, then as Songs
 <img src="https://i.imgur.com/pnhDNRr.png" alt="View Smart Playlist as Songs" width="650">
 
-5. Click the Last Played Column until it sorts descending (little down arrow **˯** next to it). Now, you can easily watch your last played songs get synced! 
+5. Click the Last Played Column until it sorts descending (little down arrow **⌄** next to it). Now, you can easily watch your last played songs get synced! 
 <img src="https://i.imgur.com/sJKu6nO.png" alt="Sort by Last Played Descending" width="700">
 
 6. Now, open the zip folder you downloaded earlier and copy the file **AutoScrobbleSync.scpt** (make sure to use the **.scpt** version, not the .applescript version!)
