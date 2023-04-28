@@ -1,5 +1,5 @@
 -- ScrobbleSync 0.6.4
---
+
 
 -- ENTER YOUR LAST.FM USERNAME HERE between the " quotes.
 
