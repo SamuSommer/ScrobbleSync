@@ -1,5 +1,5 @@
 -- AutoScrobbleSync 0.2.0
---
+
 
 -- Enter your Last.fm username here between the " quotes:
 set username to ""
