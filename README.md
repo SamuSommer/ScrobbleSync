@@ -184,6 +184,9 @@ Everything is handled on-device by the script, none of it is sent or saved anywh
 
 ### AutoScrobbleSync
 
+#### 0.2.1 (30-04-2023)
+- On error, Apple Music play count is written to comment instead of nothing
+
 #### 0.2.0 (29-04-2023)
 - Added conditions to check for username and playlist name
 
