@@ -1,4 +1,4 @@
--- AutoScrobbleSync 0.2.0
+-- AutoScrobbleSync 0.2.1
 
 
 -- Enter your Last.fm username here between the " quotes:
@@ -36,7 +36,7 @@ tell application "Music"
 				set comment of t to AMplaycount
 			end if
 		on error
-		-- optional: set comment of t to "!" or whatever
+			set comment of t to AMplaycount
 		end try
 		delay 5
 	end repeat
